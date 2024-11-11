@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <link href="normalize.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="assets/flash.svg" alt="Thunder Flash logo" class="header-logo">
+            <p class="about-text">Where you come to learn in a flash and be ready to thunder your way through any test</p>
+        </header>
+        <div class="top-wrapper">
+            <div class="top-inner-wrapper">
+                <h2 id="welcome-message"></h2>
+                        <div class="card hidden" id="flash-card"></div>
+                        <div class="card" id="flash-card-answer"></div>
+            </div>
+            <ul class="subject-list">
+                <li class="subject" id="film"><h2>TV & Film</h2></li>
+                <li class="subject"><h2>90's Music</h2></li>
+                <li class="subject" id="haribo"><h2>Haribo</h2></li>
+                <li class="subject"><h2>Goat Breeds</h2></li>
+            </ul>
+
+        </div>
+
+        <button id="clear-btn">I need a reset</button>
+
+    </div>
+    <script src="subjects.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>

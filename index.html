@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- OPEN PAGE MODAL -->
+        <div class="modal">
+            <div class="modal-wrapper">
+                <h1>Welcome to</h1>
+                <img src="assets/logo.svg" alt="thunder flash logo" class="logo">
+                <label>Let us know who you are and we can get started</label>
+                <input type="text" placeholder="What's your name?" id="user-name">
+                <label>What are you here to revise?</label>
+                <select id="subject-dropdown">
+                    <option disabled selected value="">Select subject</option>
+                    <option>History</option>
+                    <option>Trigonometry</option>
+                    <option>Geography</option>
+                    <option>Physics</option>
+                </select>
+                <button type="submit" id="submit">Let's get started</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="enter.js"></script>
+</body>
+</html>

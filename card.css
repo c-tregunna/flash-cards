@@ -1,0 +1,31 @@
+.card {
+    rotate: -1deg;
+}
+
+.one {
+    rotate: 1deg;
+    z-index: 9999;
+}
+.two {
+    rotate: -2deg;
+    z-index: 4;
+}
+.three {
+    rotate: 4deg;
+    z-index: 3;
+}
+.four {
+    rotate: -3deg;
+    z-index: 2;
+}
+.four {
+    rotate: 5deg;
+    z-index: 1;
+    /* translate: 20px 60px; */
+}
+
+button {
+    padding: 20px 40px;
+    border: 2px solid black;
+    margin-top: 500px;
+}
