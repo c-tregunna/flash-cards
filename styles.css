@@ -103,7 +103,7 @@ ul {
 
 .card {
     margin: 20px auto;
-    width: 90%;
+    min-width: 80%;
     rotate: -1deg;
     padding: 10px;
     height: 200px;

@@ -6,6 +6,8 @@ const flashCardAnswer = document.getElementById("flash-card-answer")
 const subjects = document.querySelector(".subject-list")
 const haribo = document.getElementById("haribo")
 const film = document.getElementById("film")
+const music = document.getElementById("music")
+const goats = document.getElementById("goats")
 
 let nameUser = localStorage.getItem("user-name")
 let subject = localStorage.getItem("subject-dropdown")
@@ -32,6 +34,28 @@ subjects.addEventListener('click', (e) => {
         }
         if(e.target === film) {
                 let fact = tvFilmFacts[Math.floor(Math.random()*tvFilmFacts.length)];
+                console.log(fact)
+                flashCard.innerHTML = `
+                                        <p>${fact.question}</p>
+                                        <p class="reveal">Show me the answer please</p>
+                                        `
+                flashCardAnswer.innerHTML = `
+                                        <p>${fact.answer}</p>
+                                        `
+        }
+        if(e.target === music) {
+                let fact = eightNineMusic[Math.floor(Math.random()*eightNineMusic.length)];
+                console.log(fact)
+                flashCard.innerHTML = `
+                                        <p>${fact.question}</p>
+                                        <p class="reveal">Show me the answer please</p>
+                                        `
+                flashCardAnswer.innerHTML = `
+                                        <p>${fact.answer}</p>
+                                        `
+        }
+        if(e.target === goats) {
+                let fact = goatFacts[Math.floor(Math.random()*goatFacts.length)];
                 console.log(fact)
                 flashCard.innerHTML = `
                                         <p>${fact.question}</p>
