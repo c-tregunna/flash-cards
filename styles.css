@@ -21,7 +21,8 @@ body,
 .modal,
 .modal-wrapper,
 header,
-.top-wrapper {
+.top-wrapper,
+#flash-card  {
     display: flex;
     justify-content: center;
     font-family: var(--text-font);
@@ -41,6 +42,10 @@ header,
 
 .top-wrapper {
     margin: auto;
+}
+
+.top-inner-wrapper {
+    padding: 40px 0;
 }
 
 .modal {
@@ -89,7 +94,6 @@ ul {
         #fcf9be
     );
     background-size: 100% 21px;
-    padding: 20px;
     font-size: .65rem;
     box-shadow: 0 2px 3px black;
     rotate: 1deg;
@@ -99,17 +103,23 @@ ul {
 .subject {
     height: 70px;
     cursor: pointer;
+    padding: 20px;
 }
 
 .card {
     margin: 20px auto;
-    min-width: 80%;
+    width: 100%;
     rotate: -1deg;
-    padding: 10px;
-    height: 200px;
+    padding: 10px 20px;
+    min-height: 200px;
     flex-direction: column;
+    line-height: 1rem;
 }
 
+#flash-card {
+    justify-content: center;
+    gap: 20px;
+}
 
 .subject:hover {
     box-shadow: 0px 8px 8px var(--lighter-black);
@@ -117,7 +127,7 @@ ul {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }  
 
 /* images */
@@ -146,14 +156,21 @@ h2 {
 #welcome-message {
     font-size: .75rem;
     text-transform: uppercase;
+    font-weight: bold;
     line-height: 1.25rem;
+    text-align: center;
+}
+
+#welcome-message p {
+    margin: 20px;
 }
 /* form elements */
 
 input,
 select,
 #submit,
-#clear-btn {
+#clear-btn,
+#reveal {
     padding: 18px 10px;
     border-radius: 4px;
     outline: none;
@@ -167,6 +184,10 @@ select,
     color: var(--white);
     cursor: pointer;
     padding: 18px 10px;
+}
+
+#reveal {
+    padding: 6px 20px;
 }
 
 #clear-btn {
@@ -203,5 +224,11 @@ label {
     .top-wrapper {
         flex-direction: row-reverse;
         align-items: center;
+    }
+    
+    .card {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        width: 60%;
     }
 }
