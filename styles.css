@@ -121,6 +121,10 @@ ul {
     gap: 20px;
 }
 
+#flash-card-answer {
+    rotate: 1deg;
+}
+
 .subject:hover {
     box-shadow: 0px 8px 8px var(--lighter-black);
     transform: scale(1.01);
@@ -224,6 +228,11 @@ label {
     .top-wrapper {
         flex-direction: row-reverse;
         align-items: center;
+        justify-content: space-between;
+    }
+
+    .top-inner-wrapper {
+        flex-basis: 80%;
     }
     
     .card {
