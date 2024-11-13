@@ -35,6 +35,10 @@ header,
     padding: 10px;
 }
 
+.wrapper {
+    max-width: 1020px;
+}
+
 .wrapper,
 .top-wrapper {
     width: 90%;
@@ -291,6 +295,6 @@ label {
     }
 
     #clear-btn {
-        margin: 0 4%;
+        margin: 0 47px;
     }
 }
