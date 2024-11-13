@@ -1,7 +1,3 @@
-// TV & Film
-// 90's Music
-// Haribo
-// Types of goat
 
 const tvFilmFacts = [
     {
@@ -78,3 +74,83 @@ const goatFacts = [
         answer: "The smallest breed of goat is the Pygmy goat. Originally from West Africa, these goats are often kept as pets and for milk. Adult Pygmy goats usually weigh between 35 and 60 pounds, and their friendly, social nature makes them a popular choice among small farm owners and goat enthusiasts."
     }
 ]
+
+
+
+
+//my original code before refactoring
+// subjects.addEventListener('click', (e) => {
+//         welcomeText.classList.add("hidden")
+//         flashCard.classList.remove("hidden")
+//         flashCard.innerHTML = ""
+//         flashCardAnswer.innerHTML = ""
+//         if(e.target === haribo) {
+//                 let fact = hariboFacts[Math.floor(Math.random()*hariboFacts.length)];
+//                 console.log(fact)
+//                 flashCardAnswer.classList.add("hidden")
+//                 flashCard.innerHTML = `
+//                                         <p>${fact.question}</p>
+//                                         <button id="reveal">Show me the answer please</buttton>
+//                                         `
+//                 const revelAnswer = document.getElementById("reveal")
+//                 revelAnswer.addEventListener('click', function() {
+//                         flashCard.classList.add("hidden")
+//                         flashCardAnswer.classList.remove("hidden")
+//                         flashCardAnswer.innerHTML = `
+//                                 <p>${fact.answer}</p>
+//                                 `
+//                 }) 
+//         }
+//         if(e.target === film) {
+//                 let fact = tvFilmFacts[Math.floor(Math.random()*tvFilmFacts.length)];
+//                 console.log(fact)
+//                 flashCardAnswer.classList.add("hidden")
+//                 flashCard.innerHTML = `
+//                                         <p>${fact.question}</p>
+//                                         <button id="reveal">Show me the answer please</buttton>
+//                                         `  
+//                 const revelAnswer = document.getElementById("reveal")
+//                 revelAnswer.addEventListener('click', function() {
+//                         flashCard.classList.add("hidden")
+//                         flashCardAnswer.classList.remove("hidden")
+//                         flashCardAnswer.innerHTML = `
+//                                         <p>${fact.answer}</p>
+//                                         `
+//                 }) 
+                              
+//         }
+//         if(e.target === music) {
+//                 let fact = eightNineMusic[Math.floor(Math.random()*eightNineMusic.length)];
+//                 console.log(fact)
+//                 flashCardAnswer.classList.add("hidden")
+//                 flashCard.innerHTML = `
+//                                         <p>${fact.question}</p>
+//                                         <button id="reveal">Show me the answer please</buttton>
+//                                         `
+//                 const revelAnswer = document.getElementById("reveal")
+//                 revelAnswer.addEventListener('click', function() {
+//                         flashCard.classList.add("hidden")
+//                         flashCardAnswer.classList.remove("hidden")
+//                         flashCardAnswer.innerHTML = `
+//                                         <p>${fact.answer}</p>
+//                                         `
+//                 }) 
+//         }
+//         if(e.target === goats) {
+//                 let fact = goatFacts[Math.floor(Math.random()*goatFacts.length)];
+//                 console.log(fact)
+//                 flashCardAnswer.classList.add("hidden")
+//                 flashCard.innerHTML = `
+//                                         <p>${fact.question}</p>
+//                                         <button id="reveal">Show me the answer please</buttton>
+//                                         `
+//                 const revelAnswer = document.getElementById("reveal")
+//                 revelAnswer.addEventListener('click', function() {
+//                         flashCard.classList.add("hidden")
+//                         flashCardAnswer.classList.remove("hidden")
+//                         flashCardAnswer.innerHTML = `
+//                                         <p>${fact.answer}</p>
+//                                         `
+//                 }) 
+//         }
+// })

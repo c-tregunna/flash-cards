@@ -35,13 +35,3 @@ submitBtn.addEventListener('click', function(e) {
         hideOverlay();
     }
 });
-
-
-
-
-
-
-
-
-
-
